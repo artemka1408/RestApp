@@ -1,0 +1,30 @@
+POST http://localhost:8080/clients
+Content-Type: application/json
+
+{
+  "name": "Артем Макаренко",
+  "email": "artemka140891@gmail.com",
+  "phone": "89991690300"
+
+}
+
+###
+GET http://localhost:8080/clients/1
+
+###
+GET http://localhost:8080/clients/
+
+###
+PUT http://localhost:8080/clients/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Артем",
+  "email": "artemka140891@gmail.com",
+  "phone": "89874054982"
+}
+
+###
+DELETE http://localhost:8080/clients/3
+
